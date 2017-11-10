@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://myallworld.com">
   <title>php屏蔽多个ip方法 | 我的全世界</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="html中引入php，用的ajax123456&amp;lt;script&amp;gt;  $(document).ready(function()&amp;#123;    $.get(&apos;/pbip.php&apos;,&amp;#123;ip:true&amp;#125;,function(res)&amp;#123;   &amp;#125;); &amp;#125;);&amp;lt;/script&amp;gt; php内容，判断ip是否存在1234567891011121">
+  <meta name="description" content="简单的一个php，工作中用到的，因为我是前端，不怎么会php，大家凑合着看吧，总共需要三个，第一个是html里面用ajax把php导入，第二个是php本身，第三个是屏蔽ip集合的txt文件，大神勿喷。">
 <meta name="keywords" content="工作经验">
 <meta property="og:type" content="article">
 <meta property="og:title" content="php屏蔽多个ip方法">
 <meta property="og:url" content="http://myallworld.com/2017/11/08/php屏蔽多个ip方法/index.html">
 <meta property="og:site_name" content="我的全世界">
-<meta property="og:description" content="html中引入php，用的ajax123456&amp;lt;script&amp;gt;  $(document).ready(function()&amp;#123;    $.get(&apos;/pbip.php&apos;,&amp;#123;ip:true&amp;#125;,function(res)&amp;#123;   &amp;#125;); &amp;#125;);&amp;lt;/script&amp;gt; php内容，判断ip是否存在1234567891011121">
+<meta property="og:description" content="简单的一个php，工作中用到的，因为我是前端，不怎么会php，大家凑合着看吧，总共需要三个，第一个是html里面用ajax把php导入，第二个是php本身，第三个是屏蔽ip集合的txt文件，大神勿喷。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-09T05:04:51.291Z">
+<meta property="og:updated_time" content="2017-11-09T14:47:35.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="php屏蔽多个ip方法">
-<meta name="twitter:description" content="html中引入php，用的ajax123456&amp;lt;script&amp;gt;  $(document).ready(function()&amp;#123;    $.get(&apos;/pbip.php&apos;,&amp;#123;ip:true&amp;#125;,function(res)&amp;#123;   &amp;#125;); &amp;#125;);&amp;lt;/script&amp;gt; php内容，判断ip是否存在1234567891011121">
+<meta name="twitter:description" content="简单的一个php，工作中用到的，因为我是前端，不怎么会php，大家凑合着看吧，总共需要三个，第一个是html里面用ajax把php导入，第二个是php本身，第三个是屏蔽ip集合的txt文件，大神勿喷。">
   
     <link rel="alternative" href="/atom.xml" title="我的全世界" type="application/atom+xml">
   
@@ -171,7 +171,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>html中引入php，用的ajax<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">  $(document).ready(function()&#123;</span></span><br><span class="line"><span class="undefined">    $.get('/pbip.php',&#123;ip:true&#125;,function(res)&#123;</span></span><br><span class="line"><span class="undefined">   &#125;);</span></span><br><span class="line"><span class="undefined"> &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+        <p>简单的一个php，工作中用到的，因为我是前端，不怎么会php，大家凑合着看吧，总共需要三个，第一个是html里面用ajax把php导入，第二个是php本身，第三个是屏蔽ip集合的txt文件，大神勿喷。</p>
+<a id="more"></a> 
+<p>html中引入php，用的ajax<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">  $(document).ready(function()&#123;</span></span><br><span class="line"><span class="undefined">    $.get('/pbip.php',&#123;ip:true&#125;,function(res)&#123;</span></span><br><span class="line"><span class="undefined">   &#125;);</span></span><br><span class="line"><span class="undefined"> &#125;);</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>php内容，判断ip是否存在<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"> <span class="comment">//切换为实际路径即可</span></span><br><span class="line">	$file = <span class="string">'ip.txt'</span>;</span><br><span class="line">	$handle = file_get_contents($file);</span><br><span class="line">	<span class="keyword">if</span>(strpos($handle,getIp()))&#123;</span><br><span class="line">		<span class="keyword">echo</span> <span class="string">"document.writeln('&lt;script src=\'/404.js\'&gt;&lt;/script&gt;');"</span>;</span><br><span class="line">	&#125;</span><br><span class="line"><span class="comment">//获取用户真实IP </span></span><br><span class="line"> <span class="function"><span class="keyword">function</span> <span class="title">getIp</span><span class="params">()</span> </span>&#123; </span><br><span class="line">     <span class="keyword">if</span> (getenv(<span class="string">"HTTP_CLIENT_IP"</span>) &amp;&amp; strcasecmp(getenv(<span class="string">"HTTP_CLIENT_IP"</span>), <span class="string">"unknown"</span>)) </span><br><span class="line">         $ip = getenv(<span class="string">"HTTP_CLIENT_IP"</span>); </span><br><span class="line">     <span class="keyword">else</span> </span><br><span class="line">         <span class="keyword">if</span> (getenv(<span class="string">"HTTP_X_FORWARDED_FOR"</span>) &amp;&amp; strcasecmp(getenv(<span class="string">"HTTP_X_FORWARDED_FOR"</span>), <span class="string">"unknown"</span>)) </span><br><span class="line">             $ip = getenv(<span class="string">"HTTP_X_FORWARDED_FOR"</span>); </span><br><span class="line">         <span class="keyword">else</span> </span><br><span class="line">             <span class="keyword">if</span> (getenv(<span class="string">"REMOTE_ADDR"</span>) &amp;&amp; strcasecmp(getenv(<span class="string">"REMOTE_ADDR"</span>), <span class="string">"unknown"</span>)) </span><br><span class="line">                 $ip = getenv(<span class="string">"REMOTE_ADDR"</span>); </span><br><span class="line">             <span class="keyword">else</span> </span><br><span class="line">                 <span class="keyword">if</span> (<span class="keyword">isset</span> ($_SERVER[<span class="string">'REMOTE_ADDR'</span>]) &amp;&amp; $_SERVER[<span class="string">'REMOTE_ADDR'</span>] &amp;&amp; strcasecmp($_SERVER[<span class="string">'REMOTE_ADDR'</span>], <span class="string">"unknown"</span>)) </span><br><span class="line">                     $ip = $_SERVER[<span class="string">'REMOTE_ADDR'</span>]; </span><br><span class="line">                 <span class="keyword">else</span> </span><br><span class="line">                     $ip = <span class="string">"unknown"</span>; </span><br><span class="line">     <span class="keyword">return</span> ($ip); </span><br><span class="line"> &#125;</span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure></p>
 <p>ip.txt放需要屏蔽的ip<br><br>    1.2.3.4;<br><br>    5.6.7.8;<br><br>    9.10.11.12;<br></p>
 
@@ -320,6 +322,17 @@
   
 
   
+  <div id="SOHUCS" sid="php屏蔽多个ip方法" ></div> 
+<script type="text/javascript"> 
+window.YiliaChangyanWrap = function() {
+    var appid = "cytjar8Pu"; 
+    var conf = "prod_5a476a3f370373a9b33df1a607679f8b"; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+}
+</script>
+  
 
   
 
@@ -438,6 +451,18 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">js</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">ShadowsocksR</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ServerSpeeder</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">googlebbr</a>
               </li>
             
             <div class="clearfix"></div>

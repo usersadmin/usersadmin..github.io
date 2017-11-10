@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://myallworld.com">
-  <title>我的全世界</title>
+  <title>Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速) | 我的全世界</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="记录学习,工作,生活中的点滴滴滴">
-<meta property="og:type" content="website">
-<meta property="og:title" content="我的全世界">
-<meta property="og:url" content="http://myallworld.com/index.html">
+  <meta name="description" content="使用此教程，可以完全不过脑子的搭建好SSR，且速度进行了优化">
+<meta name="keywords" content="ShadowsocksR,ServerSpeeder,googlebbr">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debian&#x2F;Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)">
+<meta property="og:url" content="http://myallworld.com/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/index.html">
 <meta property="og:site_name" content="我的全世界">
-<meta property="og:description" content="记录学习,工作,生活中的点滴滴滴">
+<meta property="og:description" content="使用此教程，可以完全不过脑子的搭建好SSR，且速度进行了优化">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-11-09T16:37:11.944Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="我的全世界">
-<meta name="twitter:description" content="记录学习,工作,生活中的点滴滴滴">
+<meta name="twitter:title" content="Debian&#x2F;Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)">
+<meta name="twitter:description" content="使用此教程，可以完全不过脑子的搭建好SSR，且速度进行了优化">
   
     <link rel="alternative" href="/atom.xml" title="我的全世界" type="application/atom+xml">
   
@@ -149,16 +151,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/">Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)</a>
+    <h1 class="article-title" itemprop="name">
+      Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)
     </h1>
   
 
@@ -171,10 +171,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <div id="sos"><div id="blog"><div id="main" data-behavior="1" class="hasCoverMetaIn"><div class="post-content markdown" itemprop="articleBody"><div class="main-content-wrap" id="yl"><blockquote><p>使用此教程，可以完全不过脑子的搭建好SSR，且速度进行了优化</p></blockquote><br>
-        
-          <a class="article-more-a" href="/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/#more">more >></a>
-        
+        <div id="sos"><div id="blog"><div id="main" data-behavior="1" class="hasCoverMetaIn"><div class="post-content markdown" itemprop="articleBody"><div class="main-content-wrap" id="yl"><blockquote><p>使用此教程，可以完全不过脑子的搭建好SSR，且速度进行了优化</p></blockquote><br><a id="more"></a><br><ul><li>注意1： KVM/VMWARE/XEN 才有用，锐速不支持 openVZ ！</li><li>注意2：脚本会不断更新（目前时间 2016.11.27），请关注<a href="https://www.dou-bi.co/ss-jc42/" target="_blank">逗比根据地原文</a></li></ul><h2>逗比一键脚本</h2><ul><li>简单的来说，如果你什么都不懂，那么你直接一路回车就可以了！</li></ul><pre><br>                        <code>wget -N –no-check-certificate <a href="https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh" target="_blank" rel="external">https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh</a> &amp;&amp; chmod +x ssr.sh &amp;&amp; bash ssr.sh<br>                        </code><br>                    </pre><h2>安装步骤</h2><ul><li>输入 1 ，就会开始安装ShadowsocksR服务端，并且会提示你输入Shadowsocks的 <code>端口/密码/加密方式/协议/混淆</code> 等参数。</li></ul><pre><br>                        <code>Please input port for shadowsocksR [1-65535]:<br>(Default port: 2333):<br>Please input password for ShadowsocksR:<br>(Default password: dou-bi.co):<br>Please input method for ShadowsocksR:<br>(Default method: aes-256-cfb):<br>Please input protocol for ShadowsocksR:<br>(Default protocol: auth_sha1_v4):<br>Please input obfs for ShadowsocksR:<br>(Default obfs: tls1.2_ticket_auth):<br>                        </code><br>                    </pre><ul><li>同时最后也会提示是否设置 协议和混淆 兼容原版（也就是使用原版SS也能链接），<font color="red">不懂 直接回车 或 输入 y</font>。</li></ul><pre><br>                        <code>Need to set protocol and obfs compatible original ( _compatible )? [Y/n] :<br>                        </code><br>                    </pre><ul><li>不输入，直接回车就是默认参数：</li></ul><pre><br>                        <code>端口：2333<br>密码：dou-bi.co<br>加密方式：aes-256-cfb<br>协议：auth_sha1_v4_compatible<br>混淆：tls1.2_ticket_auth_compatible<br>                        </code><br>                    </pre><ul><li><strong>最后会提示让你确认是否输入正确，如果没问题那就按任意键继续安装，如果输入错误，那么就使用 Ctrl + C 退出脚本。</strong></li></ul><pre><br>                        <code>================================================<br>Please confirm the following config is correct!<br> port : 2333<br> password : dou-bi.co<br> method : aes-256-cfb<br> protocol : auth_sha1_v4_compatible<br> obfs : tls1.2_ticket_auth_compatible<br>================================================<br>Press any key to continue. If it is not correct, use Ctrl + C to exit.<br>                        </code><br>                    </pre><ul><li>在安装 过程中，会提示你安装 <code>libsodium</code> 支持库（chacha20 加密方式的依赖），<font color="red">如果不懂直接回车 或 输入 y，默认安装（当然如果选成了 n 也不要紧，后面还可以单独安装）</font>。</li></ul><pre><br>                        <code>Does libsodium support library (chacha20) be installed? [Y/n] :<br>                        </code><br>                    </pre><ul><li>如果安装过程没有出错，那么最后就会提示：</li></ul><pre><br>                        <code>############################################################<br> Your ShadowsocksR info :<br> Server IP: VPS_IP<br> Server Port: 2333<br> Password: dou-bi.co<br> Method: aes-256-cfb<br> Protocol: auth_sha1_v4_compatible<br> Obfs: tls1.2_ticket_auth_compatible<br> SS url: ss://XXXXXXXXXXXXXXXXXXXXX<br> QR code: <a href="http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ss://XXXXXXXXXXXXXXXXXXXXX" target="_blank" rel="external">http://pan.baidu.com/share/qrcode?w=300&amp;h=300&amp;url=ss://XXXXXXXXXXXXXXXXXXXXX</a><br>Tip: Open the link above will be able to see two-dimensional code picture.<br>Tip: The protocol and obfs last [ _compatible ] refer to the compatible original.<br>############################################################<br>ShadowsocksR install completed!<br><a href="https://www.dou-bi.co" target="_blank" rel="external">https://www.dou-bi.co</a><br>############################################################<br>                        </code><br>                    </pre><ul><li><p>SS url 是SS链接（格式： ss://XXXXXXX ，很长），可以从剪辑版导入Shadowsocks客户端，不懂的话看下面二维码。</p></li><li><p>QR code 是二维码，复制后面的链接在浏览器打开，就会显示一个二维码的图片，可以用Shadowsocks客户端扫描二维码来添加。</p></li></ul><h2>使用说明</h2><ul><li>运行脚本</li></ul><pre><br>                        <code>bash ssr.sh<br>                        </code><br>                    </pre><ul><li>输入对应的数字来执行相应的命令。</li></ul><p>中文版</p><pre><br>                        <code>1.安装ShadowsocksR服务端<br>2.安装libsodium(chacha20加密方式)<br>3.查看账号信息<br>4.修改账号信息<br>5.手动修改账号信息<br>6.卸载ShadowsocksR服务端<br>7.更新ShadowsocksR服务端<br>————————————<br>8.启动ShadowsocksR<br>9.停止ShadowsocksR<br>10.重启ShadowsocksR<br>————————————<br>11.安装锐速（ServerSpeeder）<br>12.查看锐速状态<br>13.停止锐速<br>14.重启锐速<br>15.卸载锐速<br>                        </code><br>                    </pre><p>脚本中语言（英文）</p><pre><br>                        <code>1. Install ShadowsocksR<br>2. Install libsodium(chacha20)<br>3. View user info<br>4. Modify the user info<br>5. Manually modify user info<br>6. Uninstall ShadowsocksR<br>7. Update ShadowsocksR<br>—————————————<br>8. Start ShadowsocksR<br>9. Stop ShadowsocksR<br>10. Restart ShadowsocksR<br>—————————————<br>11. install ServerSpeeder<br>12. Status ServerSpeeder<br>13. Stop ServerSpeeder<br>14. Restart ServerSpeeder<br>15. Uninstall ServerSpeeder<br>                        </code><br>                    </pre><h2>其他说明</h2><ul><li><p>默认已经添加开机启动。</p></li><li><p>ShadowsocksR默认支持UDP转发。</p></li><li><p>本脚本已经集成了 安装/卸载 锐速(ServerSpeeder)开心版，但是是否支持请查看 <a href="https://www.91yun.org/wp-content/plugins/91yun-serverspeeder/systemlist.html" target="_blank">Linux支持内核列表</a> 。（锐速不支持OpenVZ）</p></li><li><p>多端口配置的话，脚本实现很麻烦，所以不会加入这个功能，需要的人还是手动更改为多端口吧：<a href="https://liyuans.com/archives/ssr-multi-user-configuration.html#_label0_3" target="_blank">ShadowsocksR多端口配置</a></p></li><li><p>ShadowsocksR目前支持的协议和混淆：</p><ul><li>协议（Protocol）：origin，verify_sha1，auth_sha1_v2，<strong>auth_sha1_v4，auth_aes128_md5，auth_aes128_sha1</strong></li><li>混淆（Obfs）：plain，http_simple，http_post，random_head，<strong>tls1.2_ticket_auth</strong></li><li>origin和plain是原版，加粗的是推荐使用的，均支持 兼容原版（也就是加后缀 _compatible）。</li></ul></li></ul></div></div></div></div></div>
       
 
       
@@ -215,16 +212,75 @@
 
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://myallworld.com/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/11/09/手机上下滑动js效果完整代码/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">手机上下滑动js效果完整代码</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -244,269 +300,36 @@
 
 
 
-
   
-    <article id="post-手机上下滑动js效果完整代码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/09/手机上下滑动js效果完整代码/">手机上下滑动js效果完整代码</a>
-    </h1>
   
-
-        
-        <a href="/2017/11/09/手机上下滑动js效果完整代码/" class="archive-article-date">
-  	<time datetime="2017-11-09T05:19:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>很简单的一个效果，因为不是每个页面中都是有一个公用的最外层的div的，所以事件绑定的是body，这个要注意下。</p>
-        
-          <a class="article-more-a" href="/2017/11/09/手机上下滑动js效果完整代码/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/work//" class="article-tag-list-link color5">work</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/09/手机上下滑动js效果完整代码/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-php屏蔽多个ip方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/08/php屏蔽多个ip方法/">php屏蔽多个ip方法</a>
-    </h1>
+  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+<script>
+  var cloudTieConfig = {
+    url: "http://myallworld.com/2017/11/10/Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)/", 
+    sourceId: "Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)",
+    productKey: "true",
+    target: "cloud-tie-wrapper"
+  };
+</script>
+<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
   
 
-        
-        <a href="/2017/11/08/php屏蔽多个ip方法/" class="archive-article-date">
-  	<time datetime="2017-11-08T14:08:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>简单的一个php，工作中用到的，因为我是前端，不怎么会php，大家凑合着看吧，总共需要三个，第一个是html里面用ajax把php导入，第二个是php本身，第三个是屏蔽ip集合的txt文件，大神勿喷。</p>
-        
-          <a class="article-more-a" href="/2017/11/08/php屏蔽多个ip方法/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">工作经验</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/work//" class="article-tag-list-link color5">work</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/08/php屏蔽多个ip方法/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/08/hello-world/">Hello Hexo</a>
-    </h1>
+  <div id="SOHUCS" sid="Debian/Ubuntu系统 ShadowsocksR一键安装脚本(集成锐速)" ></div> 
+<script type="text/javascript"> 
+window.YiliaChangyanWrap = function() {
+    var appid = "cytjar8Pu"; 
+    var conf = "prod_5a476a3f370373a9b33df1a607679f8b"; 
+    var width = window.innerWidth || document.documentElement.clientWidth; 
+    if (width < 960) { 
+    window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("//changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); }
+}
+</script>
   
 
-        
-        <a href="/2017/11/08/hello-world/" class="archive-article-date">
-  	<time datetime="2017-11-08T03:54:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-08</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>虽然我也是个程序员，但是我只是个前端小白，折腾了好几天，终于做出这个hexo+github弄的博客了，还是很开心的，期间出了不少问题，都通过百度解决了，百度还是一个比较不错的学习工具的。<br>
-        
-          <a class="article-more-a" href="/2017/11/08/hello-world/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/life//" class="article-tag-list-link color5">life</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/08/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
+
   
 
 
@@ -529,8 +352,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
